@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -13,9 +13,9 @@
                 <div class="col-auto mt-4">
                     <h1 class="page-header-title">
                         <div class="page-header-icon"><i data-feather="activity"></i></div>
-                        Beranda Admin REWAS
+                        Beranda Admin SIPUT BUCIN
                     </h1>
-                    <div class="page-header-subtitle">Beranda Admin Aplikasi REWAS Bagian Ekonomi SETDA Kota Depok</div>
+                    <div class="page-header-subtitle">Beranda Admin Aplikasi SIPUT BUCIN Kelurahan Pondok Cina</div>
                 </div>
             </div>
         </div>
@@ -30,11 +30,11 @@
                     <div class="row align-items-center">
                         <div class="col-xl-8 col-xxl-12">
                             <div class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
-                                <h1 class="text-primary">Selamat Datang di Aplikasi REWAS</h1>
-                                <p class="text-gray-700 mb-0">Manajemen Data dan Sistem Pengawasan Harga Komoditas Pasar Kota Depok</p>
+                                <h1 class="text-primary">Selamat Datang di Aplikasi SIPUT BUCIN</h1>
+                                <p class="text-gray-700 mb-0">Situs Pengembangan Usaha Terpadu Bagi UMKM Kelurahan Pondok Cina</p>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-xxl-12 text-center"><img class="img-fluid" src="{{ asset('css/assets/img/illustrations/at-work.svg') }}" style="max-width: 26rem" /></div>
+                        <div class="col-xl-4 col-xxl-12 text-center"><img class="img-fluid" src="{{ asset('assets/images/illustrations/at-work.svg') }}" style="max-width: 26rem" /></div>
                     </div>
                 </div>
             </div>

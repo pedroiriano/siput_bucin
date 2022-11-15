@@ -13,13 +13,7 @@
                 <div class="collapse" id="collapseDashboards" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavDashboards">
                         <a class="nav-link" href="">
-                            Komoditas Pasar
-                        </a>
-                        <a class="nav-link" href="">
-                            Grafik Harga Komoditas Pasar
-                        </a>
-                        <a class="nav-link" href="">
-                            Grafik Perbandingan Harga Komoditas Pasar
+                            Statistik Umum
                         </a>
                     </nav>
                 </div>
@@ -28,25 +22,25 @@
                     <div class="nav-link-icon"><i data-feather="book-open"></i></div>
                     Berita
                 </a>
-                <!-- Sidenav Accordion (Forum)-->
+                <!-- Sidenav Accordion (Announcement)-->
                 <a class="nav-link" href="">
                     <div class="nav-link-icon"><i data-feather="message-square"></i></div>
-                    Forum
+                    Pengumuman
                 </a>
-                <!-- Sidenav Accordion (Policy)-->
+                <!-- Sidenav Accordion (Store)-->
                 <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapsePolicies" aria-expanded="false" aria-controls="collapsePolicies">
                     <div class="nav-link-icon"><i data-feather="umbrella"></i></div>
-                    Kebijakan
+                    Toko
                     <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="collapsePolicies" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPolicies">
                         <a class="nav-link" href="">
-                            Tabel Kebijakan
+                            Tabel Toko
                         </a>
                         @if (auth()->user()->role_id == 1)
                         <a class="nav-link" href="">
-                            Tambah Kebijakan
+                            Tambah Toko
                         </a>
                         @endif
                     </nav>
@@ -94,18 +88,6 @@
                 </a>
                 <div class="collapse" id="collapseRegions" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav accordion">
-                        {{-- <a class="nav-link" href="subdistricts-table.html">
-                            Tabel Kecamatan
-                        </a>
-                        <a class="nav-link" href="add-subdistricts.html">
-                            Tambah Kecamatan
-                        </a>
-                        <a class="nav-link" href="villages-table.html">
-                            Tabel Kelurahan
-                        </a>
-                        <a class="nav-link" href="add-villages.html">
-                            Tambah Kelurahan
-                        </a> --}}
                         <a class="nav-link" href="">
                             Tabel Pasar
                         </a>
@@ -122,16 +104,16 @@
                 </a>
                 <div class="collapse" id="collapseUsers" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('role') }}">
                             Tabel Wewenang
                         </a>
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('role-form') }}">
                             Tambah Wewenang
                         </a>
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('user') }}">
                             Tabel Pengguna
                         </a>
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('user-form') }}">
                             Tambah Pengguna
                         </a>
                     </nav>

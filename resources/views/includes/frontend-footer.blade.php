@@ -45,7 +45,7 @@
             </div>
             <hr class="my-5" />
             <div class="row gx-5 align-items-center">
-                <div class="col-md-6 small">Copyright &copy; Siput Bucin 2022</div>
+                <div class="col-md-6 small">Copyright &copy; SIPUT BUCIN @php echo date('Y'); @endphp</div>
                 <div class="col-md-6 text-md-end small">
                     <a href="#!">Privacy Policy</a>
                     &middot;

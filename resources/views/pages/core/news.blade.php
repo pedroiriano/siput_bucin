@@ -26,7 +26,7 @@
 <!-- BEGIN::News -->
 <section class="bg-white py-10">
     <div class="container px-5">
-        <a class="card post-preview post-preview-featured lift mb-5 overflow-hidden" href="{{ route('news_detail') }}">
+        <a class="card post-preview post-preview-featured lift mb-5 overflow-hidden" href="{{ route('news-detail') }}">
             <div class="row g-0">
                 <div class="col-lg-5"><div class="post-preview-featured-img" style="background-image: url('./assets/images/categories/book.jpg')"></div></div>
                 <div class="col-lg-7">
@@ -49,7 +49,7 @@
         </a>
         <div class="row gx-5">
             <div class="col-md-6 col-xl-4 mb-5">
-                <a class="card post-preview lift h-100" href="{{ route('news_detail') }}">
+                <a class="card post-preview lift h-100" href="{{ route('news-detail') }}">
                     <img class="card-img-top" src="./assets/images/categories/electronic.jpg" alt="Gambar Berita" />
                     <div class="card-body">
                         <h5 class="card-title">Berita UMKM 00002</h5>
@@ -67,7 +67,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-4 mb-5">
-                <a class="card post-preview lift h-100" href="{{ route('news_detail') }}">
+                <a class="card post-preview lift h-100" href="{{ route('news-detail') }}">
                     <img class="card-img-top" src="./assets/images/categories/food-beverage.jpg" alt="Gambar Berita" />
                     <div class="card-body">
                         <h5 class="card-title">Berita UMKM 00003</h5>
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="col-md-6 col-xl-4 mb-5">
-                <a class="card post-preview lift h-100" href="{{ route('news_detail') }}">
+                <a class="card post-preview lift h-100" href="{{ route('news-detail') }}">
                     <img class="card-img-top" src="./assets/images/categories/gift.jpg" alt="Gambar Berita" />
                     <div class="card-body">
                         <h5 class="card-title">Berita UMKM 00004</h5>

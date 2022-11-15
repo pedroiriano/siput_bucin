@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -23,7 +23,7 @@
 </header>
 <!-- Main page content-->
 <div class="container-xl px-4 mt-n10">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="card mb-4">
         <div class="card-header">
             <div class="row">

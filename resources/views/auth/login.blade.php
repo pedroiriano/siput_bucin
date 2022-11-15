@@ -1,5 +1,9 @@
 @extends('layouts.auth')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
+@endsection
+
 @section('content')
 <main class="form-signin">
     <form method="POST" action="{{ route('login') }}">
