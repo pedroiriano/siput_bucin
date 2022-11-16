@@ -17,18 +17,18 @@
                         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
                             <div class="text-uppercase-expanded text-xs mb-4">Tentang Kami</div>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="about.html">Kisah Kami</a></li>
-                                <li><a href="vision.html">Visi & Misi</a></li>
+                                <li class="mb-2"><a href="{{ route('story') }}">Kisah Kami</a></li>
+                                <li><a href="{{ route('vision') }}">Visi & Misi</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
                             <div class="text-uppercase-expanded text-xs mb-4">Inti</div>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="news.html">Berita</a></li>
-                                <li class="mb-2"><a href="announcement.html">Pengumuman</a></li>
-                                <li class="mb-2"><a href="pirt.html">PIRT</a></li>
-                                <li class="mb-2"><a href="halal.html">Sertifikasi Halal</a></li>
-                                <li class="mb-2"><a href="market.html">Izin Edar</a></li>
+                                <li class="mb-2"><a href="{{ route('news') }}">Berita</a></li>
+                                <li class="mb-2"><a href="{{ route('announcement') }}">Pengumuman</a></li>
+                                <li class="mb-2"><a href="{{ route('production') }}">PIRT</a></li>
+                                <li class="mb-2"><a href="{{ route('halal') }}">Sertifikasi Halal</a></li>
+                                <li class="mb-2"><a href="{{ route('market') }}">Izin Edar</a></li>
                                 <li class="mb-2"><a href="#!">Toko UMKM</a></li>
                                 <li><a href="#!">Daftar Sekarang</a></li>
                             </ul>

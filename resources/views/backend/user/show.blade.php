@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -17,7 +17,7 @@
                     </h1>
                 </div>
                 <div class="col-12 col-xl-auto mb-3">
-                    <a class="btn btn-sm btn-light text-primary" href="/user/{{ $use->id }}/edit">
+                    <a class="btn btn-sm btn-light text-primary" href="/pengguna/{{ $use->id }}/ubah">
                         <i class="me-1" data-feather="edit"></i>
                         Ubah
                     </a>
@@ -38,7 +38,7 @@
 </header>
 <!-- Main page content-->
 <div class="container-xl px-4 mt-4">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="row">
         <div class="col-xl-4">
             <!-- Profile picture card-->
@@ -46,7 +46,7 @@
                 <div class="card-header">Foto Profil</div>
                 <div class="card-body text-center">
                     <!-- Profile picture image-->
-                    <img class="img-account-profile rounded-circle mb-2" src="{{ asset('css/assets/img/illustrations//profiles/profile-1.png') }}" alt="" />
+                    <img class="img-account-profile rounded-circle mb-2" src="{{ asset('assets/images/illustrations//profiles/profile-1.png') }}" alt="" />
                 </div>
             </div>
         </div>
@@ -71,15 +71,15 @@
                             <label class="small mb-1" for="role">Wewenang</label>
                             <input class="form-control" id="role" type="role" placeholder="Masukkan Wewenang" value="{{ $use->role_name }}" />
                         </div>
-                        <!-- Form Group (market)-->
+                        <!-- Form Group (store)-->
                         <div class="mb-3">
-                            <label class="small mb-1" for="market">Pasar</label>
-                            <input class="form-control" id="market" type="market" placeholder="Masukkan Nama Pasar" value="{{ $use->market_name }}" />
+                            <label class="small mb-1" for="store">Toko</label>
+                            <input class="form-control" id="store" type="store" placeholder="Masukkan Nama Toko" value="{{ $use->store_name }}" />
                         </div>
                         <!-- Form Group (status)-->
                         <div class="mb-3">
                             <label class="small mb-1" for="status">Status</label>
-                            <input class="form-control" id="status" type="status" placeholder="Masukkan Nama Pasar" value="{{ $use->status }}" />
+                            <input class="form-control" id="status" type="status" placeholder="Masukkan Status" value="{{ $use->status }}" />
                         </div>
                     </form>
                 </div>

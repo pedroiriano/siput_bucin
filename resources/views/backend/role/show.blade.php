@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -17,7 +17,7 @@
                     </h1>
                 </div>
                 <div class="col-12 col-xl-auto mb-3">
-                    <a class="btn btn-sm btn-light text-primary" href="/role/{{ $rol->id }}/edit">
+                    <a class="btn btn-sm btn-light text-primary" href="/wewenang/{{ $rol->id }}/ubah">
                         <i class="me-1" data-feather="edit"></i>
                         Ubah
                     </a>
@@ -36,7 +36,7 @@
 </header>
 <!-- Main page content-->
 <div class="container-fluid px-4">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="card">
         <div class="card-body">
             <div class="small text-muted mb-2 fw-bolder text-uppercase">Wewenang</div>

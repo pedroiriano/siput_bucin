@@ -13,6 +13,9 @@
                 <div class="col-xl-8 col-lg-10 text-center">
                     <h1 class="page-header-ui-title">Selamat Datang di</h1>
                     <p class="page-header-ui-text mb-5">Situs Pengembangan Usaha Terpadu Bagi UMKM Kelurahan Pondok Cina</p>
+                    @auth
+                    <a class="btn btn-teal fw-500 me-2" href="{{ route('backend') }}">Masuk Sistem</a>
+                    @endauth
                 </div>
             </div>
         </div>

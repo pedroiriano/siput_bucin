@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -31,7 +31,7 @@
 @csrf
 @method('PUT')
 <div class="container-fluid px-4">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="row gx-4">
         <div class="col-lg-8">
             <div class="card mb-4">

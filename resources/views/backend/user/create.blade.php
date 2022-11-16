@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -30,13 +30,13 @@
 <form action="{{ route('user-store') }}" method="POST" enctype="multipart/form-data">
 @csrf
 <div class="container-fluid px-4">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="row gx-4">
         <div class="col-lg-8">
             <div class="card mb-4">
                 <div class="card-header">Nama Pengguna</div>
                 <div class="card-body">
-                    <input class="form-control" id="user" name="user" type="text" placeholder="Masukkan Nama Pengguna (contoh: UPT Pasar Agung Depok)" />
+                    <input class="form-control" id="user" name="user" type="text" placeholder="Masukkan Nama Pengguna (contoh: UPT Toko Agung Depok)" />
                 </div>
             </div>
             <div class="card mb-4">
@@ -58,9 +58,9 @@
                 </div>
             </div>
             <div class="card mb-4">
-                <div class="card-header">Pasar</div>
+                <div class="card-header">Toko</div>
                 <div class="card-body">
-                    <select class="form-control" id="market" name="market">
+                    <select class="form-control" id="store" name="store">
                         @if (count($mars) > 0)
                             @foreach ($mars as $mar)
                                 <option value="{{ $mar->id }}">{{ $mar->name }}</option>

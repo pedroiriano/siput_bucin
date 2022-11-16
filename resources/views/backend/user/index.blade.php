@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -23,7 +23,7 @@
 </header>
 <!-- Main page content-->
 <div class="container-xl px-4 mt-n10">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="card mb-4">
         <div class="card-header">
             <div class="row">
@@ -45,7 +45,7 @@
                     <tr>
                         <th class="text-center">ID</th>
                         <th class="text-center">Nama Pengguna</th>
-                        <th class="text-center">Pasar</th>
+                        <th class="text-center">Toko</th>
                         <th class="text-center">Wewenang</th>
                         <th class="text-center">Aksi</th>
                     </tr>
@@ -54,7 +54,7 @@
                     <tr>
                         <th class="text-center">ID</th>
                         <th class="text-center">Nama Pengguna</th>
-                        <th class="text-center">Pasar</th>
+                        <th class="text-center">Toko</th>
                         <th class="text-center">Wewenang</th>
                         <th class="text-center">Aksi</th>
                     </tr>
@@ -66,16 +66,16 @@
                                 <tr>
                                     <td>{{ $use->id }}</td>
                                     <td>{{ $use->name }}</td>
-                                    <td>{{ $use->market_name }}</td>
+                                    <td>{{ $use->store_name }}</td>
                                     <td>{{ $use->role_name }}</td>
                                     <td class="text-center">
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2">
-                                            <a class="text-decoration-none text-muted" href="/user/{{ $use->id }}">
+                                            <a class="text-decoration-none text-muted" href="/pengguna/{{ $use->id }}">
                                                 <i data-feather="eye"></i>
                                             </a>
                                         </button>
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2">
-                                            <a class="text-decoration-none text-muted" href="/user/{{ $use->id }}/edit">
+                                            <a class="text-decoration-none text-muted" href="/pengguna/{{ $use->id }}/ubah">
                                                 <i data-feather="edit"></i>
                                             </a>
                                         </button>

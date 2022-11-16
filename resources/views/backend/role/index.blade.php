@@ -64,12 +64,12 @@
                                     <td>{{ $rol->name }}</td>
                                     <td class="text-center">
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2">
-                                            <a class="text-decoration-none text-muted" href="/role/{{ $rol->id }}">
+                                            <a class="text-decoration-none text-muted" href="/wewenang/{{ $rol->id }}">
                                                 <i data-feather="eye"></i>
                                             </a>
                                         </button>
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2">
-                                            <a class="text-decoration-none text-muted" href="/role/{{ $rol->id }}/edit">
+                                            <a class="text-decoration-none text-muted" href="/wewenang/{{ $rol->id }}/ubah">
                                                 <i data-feather="edit"></i>
                                             </a>
                                         </button>
