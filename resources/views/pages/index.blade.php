@@ -36,19 +36,19 @@
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <a class="card lift" href="pirt.html">
+                <a class="card lift" href="{{ route('production') }}">
                     <img class="card-img-top" src="assets/images/informations/pirt-01.png" alt="Gambar Kategori" />
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">PIRT</h6></div>
                 </a>
             </div>
             <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                <a class="card lift" href="halal.html">
+                <a class="card lift" href="{{ route('halal') }}">
                     <img class="card-img-top" src="assets/images/informations/halal-01.png" alt="Gambar Kategori" />
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">Sertifikasi Halal</h6></div>
                 </a>
             </div>
             <div class="col-md-6 col-lg-4">
-                <a class="card lift" href="market.html">
+                <a class="card lift" href="{{ route('market') }}">
                     <img class="card-img-top" src="assets/images/informations/edar-01.png" alt="Gambar Kategori" />
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">Izin Edar</h6></div>
                 </a>
