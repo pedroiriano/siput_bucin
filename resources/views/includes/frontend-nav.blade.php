@@ -39,6 +39,7 @@
                                 <a class="dropdown-item" href="{{ route('production') }}">PIRT</a>
                                 <a class="dropdown-item" href="{{ route('halal') }}">Sertifikasi Halal</a>
                                 <a class="dropdown-item" href="{{ route('market') }}">Izin Edar</a>
+                                <a class="dropdown-item" href="{{ route('trademark') }}">Haki</a>
                                 <div class="dropdown-divider border-0 d-lg-none"></div>
                             </div>
                             <div class="col-lg-4 p-lg-5">

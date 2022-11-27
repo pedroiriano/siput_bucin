@@ -26,6 +26,7 @@ Route::get('/pengumuman', [PagesController::class, 'announcement'])->name('annou
 Route::get('/pirt', [PagesController::class, 'production'])->name('production');
 Route::get('/sertifikasi-halal', [PagesController::class, 'halal'])->name('halal');
 Route::get('/izin-edar', [PagesController::class, 'market'])->name('market');
+Route::get('/haki', [PagesController::class, 'trademark'])->name('trademark');
 
 Route::get('/sistem', [BackendController::class, 'index'])->name('backend');
 

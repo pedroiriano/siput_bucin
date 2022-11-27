@@ -46,6 +46,11 @@ class PagesController extends Controller
         return view('pages.core.market');
     }
 
+    public function trademark()
+    {
+        return view('pages.core.trademark');
+    }
+
     public function news_detail()
     {
         return view('pages.core.news-detail');

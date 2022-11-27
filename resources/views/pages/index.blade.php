@@ -54,7 +54,7 @@
                 </a>
             </div>
             <div class="col-md-4 col-lg-3">
-                <a class="card lift" href="{{ route('market') }}">
+                <a class="card lift" href="{{ route('trademark') }}">
                     <img class="card-img-top" src="{{ asset('assets/images/informations/haki-01.png') }}" alt="Gambar Kategori" />
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">Haki</h6></div>
                 </a>
