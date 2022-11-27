@@ -41,13 +41,13 @@
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">PIRT</h6></div>
                 </a>
             </div>
-            <div class="col-md-4 col-lg-3 mb-5 mb-md-0">
+            <div class="col-md-4 col-lg-3 mb-5 mb-lg-0">
                 <a class="card lift" href="{{ route('halal') }}">
                     <img class="card-img-top" src="{{ asset('assets/images/informations/halal-01.png') }}" alt="Gambar Kategori" />
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">Sertifikasi Halal</h6></div>
                 </a>
             </div>
-            <div class="col-md-4 col-lg-3 mb-md-0">
+            <div class="col-md-4 col-lg-3 mb-lg-0">
                 <a class="card lift" href="{{ route('market') }}">
                     <img class="card-img-top" src="{{ asset('assets/images/informations/edar-01.png') }}" alt="Gambar Kategori" />
                     <div class="card-body text-center py-3"><h6 class="card-title mb-0">Izin Edar</h6></div>
