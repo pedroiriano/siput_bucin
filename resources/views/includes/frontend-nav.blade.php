@@ -69,7 +69,7 @@
                             <div class="icon-stack bg-primary-soft text-primary me-4"><i data-feather="phone"></i></div>
                             <div>
                                 <div class="small text-gray-500">Kontak</div>
-                                08999002566
+                                085711348161
                             </div>
                         </a>
                     </div>
