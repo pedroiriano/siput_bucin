@@ -38,7 +38,7 @@
                         <div class="d-flex align-items-center justify-content-between px-4 py-5">
                             <div class="me-3">
                                 <h4 class="mb-0">Tahapan</h4>
-                                <p class="card-text text-gray-500">Rincian setiap langkah pengurusan Hak Kekayaan Intelektual berdasarkan<a href="https://www.dgip.go.id/menu-utama/merek/syarat-prosedur" target="_blank">aturan Kementerian Hukum dan HAM RI</a></p>
+                                <p class="card-text text-gray-500">Rincian setiap langkah pengurusan Hak Kekayaan Intelektual berdasarkan <a href="https://www.dgip.go.id/menu-utama/merek/syarat-prosedur" target="_blank">aturan Kementerian Hukum dan HAM RI</a></p>
                             </div>
                         </div>
                     </div>
@@ -57,52 +57,44 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header" id="headingPirt02"><button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePirt02" aria-expanded="false" aria-controls="collapsePirt02">Mengikuti Penyuluhan Keamanan Pangan</button></h5>
+                        <h5 class="accordion-header" id="headingPirt02"><button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePirt02" aria-expanded="false" aria-controls="collapsePirt02">Prosedur Pertama</button></h5>
                         <div class="accordion-collapse collapse" id="collapsePirt02" aria-labelledby="headingPirt02" data-bs-parent="#accordionHaki01">
                             <div class="accordion-body p-4">
-                                Penyuluhan ini bersifat kolektif, yaitu dilaksanakan jika peserta sudah memenuhi kuota yang ditentukan. Adapun, materi penyuluhan yang diberikan, antara lain:
+                                Pesan kode billing di <a href="http://simpaki.dgip.go.id/" target="_blank">http://simpaki.dgip.go.id/</a>
                                 <ol>
-                                    <li>Cara memilih bahan mentah dan bahan tambahan pangan</li>
-                                    <li>Pedoman cara produksi pangan yang baik untuk IRT (Industri Rumah Tangga)</li>
-                                    <li>Penyakit-penyakit akibat pangan</li>
-                                    <li>Higiene sanitasi pengolahan pangan dan karyawan</li>
-                                    <li>Undang-undang dan pengawasan pangan</li>
-                                    <li>Pengendalian proses dalam pengolahan pangan</li>
-                                    <li>Tata cara penyelenggaraan sertifikasi produksi pangan IRT</li>
-                                    <li>Kontaminasi silang dan cara mengatasinya</li>
-                                    <li>Mikroba dan kerusakan mikrobiologisnya</li>
+                                    <li>Pilih 'Merek dan Indikasi Geografis' pada jenis pelayanan</li>
+                                    <li>Pilih 'Permohonan Pendaftaran Merek yang Diajukan Oleh:'</li>
+                                    <li>Pilih 'Usaha Mikro dan Usaha Kecil' atau 'Umum' </li>
+                                    <li>Pilih 'Secara Elektronik (Online)'</li>
+                                    <li>Masukkan Data Pemohon dan Data Permohonan (nama, alamat lengkap, email dan nomor ponsel, dll)</li>
+                                    <li>Lakukan pembayaran PNBP melalui ATM/internet banking/m-banking</li>
                                 </ol>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header" id="headingPirt03"><button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePirt03" aria-expanded="false" aria-controls="collapsePirt03">Survei Lapangan oleh Petugas Puskesmas</button></h5>
+                        <h5 class="accordion-header" id="headingPirt03"><button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePirt03" aria-expanded="false" aria-controls="collapsePirt03">Prosedur Kedua</button></h5>
                         <div class="accordion-collapse collapse" id="collapsePirt03" aria-labelledby="headingPirt03" data-bs-parent="#accordionHaki01">
                             <div class="accordion-body p-4">
-                                Survei dan pengecekan ke lokasi usaha tersebut bertujuan untuk melihat proses produksi serta bahan-bahan yang dipergunakan. Jika memang dibutuhkan, sampel pangan pun akan diteliti dengan uji laboratorium. Adapun beberapa aspek yang disurvei, antara lain:
+                                Buat Akun dan Log in pada Akun Merek <a href="https://merek.dgip.go.id/" target="_blank">https://merek.dgip.go.id/</a>
                                 <ol>
-                                    <li>Lingkungan produksi meliputi kebersihan lingkungan</li>
-                                    <li>Bangunan dan fasilitas meliputi ukuran bangunan, ventilasi, tempat cuci tangan, dan lain sebagainya</li>
-                                    <li>Peralatan produksi meliputi kebersihan dan kelengkapannya</li>
-                                    <li>Suplai air apakah mencukupi</li>
-                                    <li>Fasilitas kegiatan higiene dan sanitasi meliputi ketersediaan sarana mencuci yang cukup baik, posisi toilet/jamban dengan tempat produksi, dan ketersediaan tempat sampah tertutup</li>
-                                    <li>Kesehatan higiene karyawan</li>
-                                    <li>Pengawasan oleh penanggung jawab</li>
-                                    <li>Pencatatan dokumentasi dan administrasi</li>
+                                    <li>Pilih 'Permohonan Online'</li>
+                                    <li>Langkah 1: Pilih tipe permohonan, masukkan Kode billing yang telah dibayarkan</li>
+                                    <li>Langkah 2: masukkan Data Pemohon</li>
+                                    <li>Langkah 3: diisi jika permohonan dengan kuasa (konsultan ki)</li>
+                                    <li>Langkah 4: diisi jika memiliki hak prioritas</li>
+                                    <li>Langkah 5: masukkan Data Merek</li>
+                                    <li>Langkah 6: masukkan Data Kelas dengan klik 'Tambah'</li>
+                                    <li>Langkah 7: klik 'Tambah' untuk mengunggah lampiran dokumen persyaratan</li>
+                                    <li>Langkah 8: Preview (pastikan seluruh data Anda sudah benar)</li>
+                                    <li>Langkah 9: Cetak Draft Tanda Terima</li>
+                                    <li>Klik 'Selesai'</li>
                                 </ol>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h5 class="accordion-header" id="headingPirt04"><button class="accordion-button p-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePirt04" aria-expanded="false" aria-controls="collapsePirt04">Mengambil Sertifikat Produksi Pangan Industri Rumah Tangga</button></h5>
-                        <div class="accordion-collapse collapse" id="collapsePirt04" aria-labelledby="headingPirt04" data-bs-parent="#accordionHaki01">
-                            <div class="accordion-body p-4">
-                                Jika semua tahap yang dilewati sesuai prosedur, PIRT akan keluar dalam waktu kurang lebih 2 minggu. Peserta pengajuan PIRT akan mendapatkan dua sertifikat, yaitu sertifikat penyuluhan dan sertifikat PIRT. Dari situ, otomatis produk usahamu sudah terdaftar secara legal pada Dinas Kesehatan dan wajib diperbaharui setelah masa berlakunya sudah habis (3 atau 5 tahun).
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="mb-0">Izin Edar yang telah terbit berlaku untuk jangka waktu 5 tahun dan dapat diperpanjang melalui pendaftaran ulang.</p>
+                <p class="mb-0">Biaya Umum Rp. 1.800.000/kelas, sedangkan biaya UMK Rp. 500.000/kelas.</p>
             </div>
         </div>
     </div>
