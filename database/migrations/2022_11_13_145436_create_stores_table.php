@@ -17,10 +17,13 @@ class CreateStoresTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->text('address');
-            $table->binary('photo');
+            $table->binary('photo')->nullable();
             $table->bigInteger('category_id')->nullable();
             $table->bigInteger('subdistrict_id')->nullable();
             $table->bigInteger('village_id')->nullable();
+            $table->text('bin');
+            $table->integer('business_age');
+            $table->integer('employees');
             $table->timestamps();
         });
     }

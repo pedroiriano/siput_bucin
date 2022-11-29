@@ -60,7 +60,7 @@
             </div>
             @if ($user->role_id == 1)
             <div class="card mb-4">
-                <div class="card-header">Pasar</div>
+                <div class="card-header">Toko</div>
                 <div class="card-body">
                     <select class="form-control" id="store" name="store">
                         @if (count($mars) > 0)
