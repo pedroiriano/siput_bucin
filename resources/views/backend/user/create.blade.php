@@ -36,13 +36,13 @@
             <div class="card mb-4">
                 <div class="card-header">Nama Pengguna</div>
                 <div class="card-body">
-                    <input class="form-control" id="user" name="user" type="text" placeholder="Masukkan Nama Pengguna (contoh: UPT Toko Agung Depok)" />
+                    <input class="form-control" id="user" name="user" type="text" placeholder="Masukkan Nama Pengguna (contoh: UPT Toko Agung Depok)" value="{{ old('user') }}" />
                 </div>
             </div>
             <div class="card mb-4">
                 <div class="card-header">Alamat Email</div>
                 <div class="card-body">
-                    <input class="form-control" id="email" name="email" type="email" placeholder="Masukkan Alamat Email (contoh: agungdepok@depok.go.id)" />
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Masukkan Alamat Email (contoh: agungdepok@depok.go.id)" value="{{ old('email') }}" />
                 </div>
             </div>
             <div class="card mb-4">
