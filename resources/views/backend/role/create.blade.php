@@ -35,7 +35,7 @@
         <div class="col-lg-8">
             <div class="card mb-4">
                 <div class="card-header">Wewenang</div>
-                <div class="card-body"><input class="form-control" id="role" name="role" type="text" placeholder="Masukkan Nama Wewenang (contoh: Super Admin)" /></div>
+                <div class="card-body"><input class="form-control" id="role" name="role" type="text" placeholder="Masukkan Nama Wewenang (contoh: Super Admin)" value="{{ old('role') }}" /></div>
             </div>
         </div>
         <!-- Sticky Navigation-->

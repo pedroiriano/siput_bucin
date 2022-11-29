@@ -29,6 +29,18 @@
             {{ session('status') }}
         </div>
     </div>
+@elseif ($errors->any())
+    <div class="alert alert-danger alert-icon" role="alert">
+        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="alert-icon-aside">
+            <i data-feather="alert-circle"></i>
+        </div>
+        <div class="alert-icon-content">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </div>
+    </div>
 @else
 
 @endif
