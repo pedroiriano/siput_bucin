@@ -3,12 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
+use App\User;
+use App\Store;
 
 class PagesController extends Controller
 {
     public function index()
     {
-        return view('pages.index');
+        $mars = DB::table('stores')
+                ->leftJoin('users', 'stores.user_id', '=', 'users.id')
+                ->select('stores.*', 'users.name as user_name')
+                ->get();
+
+        return view('pages.index')->with('mars', $mars);
     }
 
     public function story()

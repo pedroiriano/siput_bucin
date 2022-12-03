@@ -89,11 +89,12 @@
             </div>
         </div>
         <div class="row gx-5">
+            @foreach ($mars as $mar)
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <a class="card lift" href="#!">
-                    <img class="card-img-top" src="assets/images/businesses/business-00001.jpg" alt="gambar-bisnis" />
+                    <img class="card-img-top" src="/storage/photos/{{ $mar->photo }}" alt="gambar-bisnis" />
                     <div class="card-body text-center py-3">
-                        <h6 class="card-title mb-0">Perkebunan Bambu</h6>
+                        <h6 class="card-title mb-0">{{ $mar->name }}</h6>
                         <div class="text-yellow">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -102,56 +103,15 @@
                             <i class="fas fa-star-half-alt"></i>
                         </div>
                         <div class="small mb-2">(12 Ulasan)</div>
-                        <div class="small">Kelurahan Pondok Cina, Depok</div>
+                        <div class="small">{{ $mar->address }}</div>
                     </div>
                     <div class="card-footer text-center text-xs">
                         <i class="fas fa-store-alt me-1"></i>
-                        Buka 2 minggu yang lalu
+                        Buka {{ $mar->business_age }} yang lalu
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <a class="card lift" href="#!">
-                    <img class="card-img-top" src="assets/images/businesses/business-00002.jpg" alt="gambar-bisnis" />
-                    <div class="card-body text-center py-3">
-                        <h6 class="card-title mb-0">Tiram Tepi Danau</h6>
-                        <div class="text-yellow">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="small mb-2">(8 Ulasan)</div>
-                        <div class="small">Kelurahan Pondok Cina, Depok</div>
-                    </div>
-                    <div class="card-footer text-center text-xs">
-                        <i class="fas fa-store-alt me-1"></i>
-                        Buka 3 minggu yang lalu
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <a class="card lift" href="#!">
-                    <img class="card-img-top" src="assets/images/businesses/business-00003.jpg" alt="gambar-bisnis" />
-                    <div class="card-body text-center py-3">
-                        <h6 class="card-title mb-0">Simpangan Hutan</h6>
-                        <div class="text-yellow">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="small mb-2">(29 Ulasan)</div>
-                        <div class="small">Kelurahan Pondok Cina, Depok</div>
-                    </div>
-                    <div class="card-footer text-center text-xs">
-                        <i class="fas fa-store-alt me-1"></i>
-                        Buka 3 minggu yang lalu
-                    </div>
-                </a>
-            </div>
+            @endforeach
         </div>
     </div>
     <div class="svg-border-angled text-dark">

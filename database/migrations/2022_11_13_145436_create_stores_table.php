@@ -17,13 +17,15 @@ class CreateStoresTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->text('address');
-            $table->binary('photo')->nullable();
-            $table->bigInteger('category_id')->nullable();
-            $table->bigInteger('subdistrict_id')->nullable();
-            $table->bigInteger('village_id')->nullable();
-            $table->text('bin');
-            $table->integer('business_age');
+            $table->bigInteger('user_id')->nullable();
+            $table->string('photo')->nullable();
+            $table->string('category')->nullable();
+            $table->string('subdistrict')->default('Beji');
+            $table->string('village')->default('Pondok Cina');
+            $table->string('bin')->nullable();
+            $table->string('business_age');
             $table->integer('employees');
+            $table->string('phone');
             $table->timestamps();
         });
     }

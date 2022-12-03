@@ -8,6 +8,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\BackendController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StoreController;
 
 Route::get('/daftar', [RegisterController::class, 'index'])->name('register');
 Route::post('/daftar', [RegisterController::class, 'store']);
@@ -45,3 +46,11 @@ Route::get('/pengguna/{user}', [UserController::class, 'show'])->name('user-show
 Route::get('/pengguna/{user}/ubah', [UserController::class, 'edit'])->name('user-edit');
 Route::put('/pengguna/{user}', [UserController::class, 'update'])->name('user-update');
 Route::delete('/pengguna/{user}', [UserController::class, 'destroy'])->name('user-delete');
+
+Route::get('/toko', [StoreController::class, 'index'])->name('store');
+Route::get('/toko/tambah', [StoreController::class, 'create'])->name('store-form');
+Route::post('/toko', [StoreController::class, 'store'])->name('store-store');
+Route::get('/toko/{store}', [StoreController::class, 'show'])->name('store-show');
+Route::get('/toko/{store}/ubah', [StoreController::class, 'edit'])->name('store-edit');
+Route::put('/toko/{store}', [StoreController::class, 'update'])->name('store-update');
+Route::delete('/toko/{store}', [StoreController::class, 'destroy'])->name('store-delete');

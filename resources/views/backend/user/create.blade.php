@@ -57,7 +57,7 @@
                     <input class="form-control" id="password-confirm" name="password_confirmation" type="password" placeholder="Masukkan Kata Sandi Minimal 9 Karakter (contoh: 123456789)" />
                 </div>
             </div>
-            <div class="card mb-4">
+            {{-- <div class="card mb-4">
                 <div class="card-header">Toko</div>
                 <div class="card-body">
                     <select class="form-control" id="store" name="store">
@@ -68,7 +68,7 @@
                         @endif
                     </select>
                 </div>
-            </div>
+            </div> --}}
             <div class="card mb-4">
                 <div class="card-header">Wewenang</div>
                 <div class="card-body">

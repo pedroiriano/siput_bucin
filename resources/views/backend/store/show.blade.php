@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -13,11 +13,11 @@
                 <div class="col-auto mb-3">
                     <h1 class="page-header-title">
                         <div class="page-header-icon"><i data-feather="coffee"></i></div>
-                        Detail Pasar
+                        Detail Toko
                     </h1>
                 </div>
                 <div class="col-12 col-xl-auto mb-3">
-                    <a class="btn btn-sm btn-light text-primary" href="/market/{{ $mar->id }}/edit">
+                    <a class="btn btn-sm btn-light text-primary" href="/toko/{{ $mar->id }}/ubah">
                         <i class="me-1" data-feather="edit"></i>
                         Ubah
                     </a>
@@ -25,9 +25,9 @@
                         <i class="me-1" data-feather="trash-2"></i>
                         Hapus
                     </a>
-                    <a class="btn btn-sm btn-light text-primary" href="{{ route('market') }}">
+                    <a class="btn btn-sm btn-light text-primary" href="{{ route('store') }}">
                         <i class="me-1" data-feather="arrow-left"></i>
-                        Kembali ke Tabel Pasar
+                        Kembali ke Tabel Toko
                     </a>
                 </div>
             </div>
@@ -36,16 +36,17 @@
 </header>
 <!-- Main page content-->
 <div class="container-fluid px-4">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="card">
         <div class="card-body">
-            <div class="small text-muted mb-2 fw-bolder text-uppercase">Pasar</div>
+            <div class="small text-muted mb-2 fw-bolder text-uppercase">Toko</div>
             <div class="row">
                 <div class="col-lg-12">
+                    <img class="card-img-top" src="/storage/photos/{{ $mar->photo }}">
                     <div class="ms-0">
                         <div class="row small text-muted fw-bold">
                             <div class="col-3">
-                                ID Pasar
+                                ID Toko
                             </div>
                             <div class="col-9">
                                 {{ $mar->id }}
@@ -53,7 +54,7 @@
                         </div>
                         <div class="row small text-muted fw-bold">
                             <div class="col-3">
-                                Nama Pasar
+                                Nama Toko
                             </div>
                             <div class="col-9">
                                 {{ $mar->name }}
@@ -78,7 +79,7 @@
                 <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">
                     Tidak
                 </button>
-                <form class="btn" action="{{ route('market-delete', $mar->id) }}" method="POST">
+                <form class="btn" action="{{ route('store-delete', $mar->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-primary">

@@ -35,11 +35,11 @@
                 </a>
                 <div class="collapse" id="collapsePolicies" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPolicies">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('store') }}">
                             Tabel Toko
                         </a>
                         @if (auth()->user()->role_id == 1)
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('store-form') }}">
                             Tambah Toko
                         </a>
                         @endif

@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/backend/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('vendors/backend/css/styles.css') }}">
 @endsection
 
 @section('content')
@@ -13,9 +13,9 @@
                 <div class="col-auto mt-4">
                     <h1 class="page-header-title">
                         <div class="page-header-icon"><i data-feather="filter"></i></div>
-                        Tabel Pasar
+                        Tabel Toko
                     </h1>
-                    <div class="page-header-subtitle">Data Utama Pasar</div>
+                    <div class="page-header-subtitle">Data Utama Toko</div>
                 </div>
             </div>
         </div>
@@ -23,17 +23,17 @@
 </header>
 <!-- Main page content-->
 <div class="container-xl px-4 mt-n10">
-    @include('inc.alert-message')
+    @include('includes.alert-message')
     <div class="card mb-4">
         <div class="card-header">
             <div class="row">
                 <div class="col-6 text-start">
-                    Pasar
+                    Toko
                 </div>
                 <div class="col-6 text-end">
-                    <a class="btn btn-sm btn-light text-primary" href="{{ route('market-form') }}">
+                    <a class="btn btn-sm btn-light text-primary" href="{{ route('store-form') }}">
                         <i class="me-1" data-feather="plus"></i>
-                        Tambah Pasar
+                        Tambah Toko
                         <i class="ms-1" data-feather="plus"></i>
                     </a>
                 </div>
@@ -44,14 +44,14 @@
                 <thead>
                     <tr>
                         <th class="text-center">ID</th>
-                        <th class="text-center">Pasar</th>
+                        <th class="text-center">Toko</th>
                         <th class="text-center">Aksi</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
                         <th class="text-center">ID</th>
-                        <th class="text-center">Pasar</th>
+                        <th class="text-center">Toko</th>
                         <th class="text-center">Aksi</th>
                     </tr>
                 </tfoot>
@@ -64,16 +64,16 @@
                                     <td>{{ $mar->name }}</td>
                                     <td class="text-center">
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2">
-                                            <a class="text-decoration-none text-muted" href="/market/{{ $mar->id }}">
+                                            <a class="text-decoration-none text-muted" href="/toko/{{ $mar->id }}">
                                                 <i data-feather="eye"></i>
                                             </a>
                                         </button>
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2">
-                                            <a class="text-decoration-none text-muted" href="/market/{{ $mar->id }}/edit">
+                                            <a class="text-decoration-none text-muted" href="/toko/{{ $mar->id }}/edit">
                                                 <i data-feather="edit"></i>
                                             </a>
                                         </button>
-                                        <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2 delete-market" data-bs-toggle="modal" data-bs-target="#deleteModal" data-url="{{ route('market-delete', $mar->id) }}">
+                                        <button class="btn btn-datatable btn-icon btn-transparent-dark ms-2 me-2 delete-store" data-bs-toggle="modal" data-bs-target="#deleteModal" data-url="{{ route('store-delete', $mar->id) }}">
                                             <a class="text-decoration-none text-muted">
                                                 <i data-feather="trash-2"></i>
                                             </a>
@@ -124,7 +124,7 @@
 
 @section('js')
 <script>
-    $("#datatablesSimple").on("click", ".delete-market", function() {
+    $("#datatablesSimple").on("click", ".delete-store", function() {
         var url = $(this).attr('data-url');
         $("#deleteForm").attr("action", url);
     });
