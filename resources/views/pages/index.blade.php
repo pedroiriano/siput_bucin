@@ -95,14 +95,14 @@
                     <img class="card-img-top" src="/storage/photos/{{ $mar->photo }}" alt="gambar-bisnis" />
                     <div class="card-body text-center py-3">
                         <h6 class="card-title mb-0">{{ $mar->name }}</h6>
-                        <div class="text-yellow">
+                        {{-- <div class="text-yellow">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="small mb-2">(12 Ulasan)</div>
+                        <div class="small mb-2">(12 Ulasan)</div> --}}
                         <div class="small">{{ $mar->address }}</div>
                     </div>
                     <div class="card-footer text-center text-xs">
