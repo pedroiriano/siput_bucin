@@ -24,7 +24,7 @@ class UserController extends Controller
 
         if(($user->role_id) == 1) {
             $uses = DB::table('users')
-                ->leftJoin('stores', 'users.store_id', '=', 'stores.id')
+                ->leftJoin('stores', 'users.id', '=', 'stores.user_id')
                 ->leftJoin('roles', 'users.role_id', '=', 'roles.id')
                 ->select('users.*', 'stores.name as store_name', 'roles.name as role_name')
                 ->get();
