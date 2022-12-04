@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="row gx-5 justify-content-center">
+        <div id="businesses" class="row gx-5 justify-content-center">
             <div class="col-lg-6">
                 <div class="mb-5 text-center">
                     <div class="text-xs text-uppercase-expanded text-primary mb-2">Bisnis Populer</div>
@@ -91,7 +91,7 @@
         <div class="row gx-5">
             @foreach ($mars as $mar)
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <a class="card lift" href="#!">
+                <a class="card lift" href="/usaha/detail/{{ $mar->id }}">
                     <img class="card-img-top" src="/storage/photos/{{ $mar->photo }}" alt="gambar-bisnis" />
                     <div class="card-body text-center py-3">
                         <h6 class="card-title mb-0">{{ $mar->name }}</h6>
@@ -113,6 +113,7 @@
             </div>
             @endforeach
         </div>
+        {{ $mars->links() }}
     </div>
     <div class="svg-border-angled text-dark">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>

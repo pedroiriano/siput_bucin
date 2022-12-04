@@ -30,7 +30,7 @@
                                 <li class="mb-2"><a href="{{ route('halal') }}">Sertifikasi Halal</a></li>
                                 <li class="mb-2"><a href="{{ route('market') }}">Izin Edar</a></li>
                                 <li class="mb-2"><a href="{{ route('trademark') }}">Haki</a></li>
-                                <li class="mb-2"><a href="#!">Toko UMKM</a></li>
+                                <li class="mb-2"><a href="#businesses">Toko UMKM</a></li>
                                 <li><a href="#!">Daftar Sekarang</a></li>
                             </ul>
                         </div>

@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-lg-4 p-lg-5">
                                 <h6 class="dropdown-header text-primary">Gabung Kami</h6>
-                                <a class="dropdown-item" href="">Toko UMKM</a>
+                                <a class="dropdown-item" href="#businesses">Toko UMKM</a>
                                 <a class="dropdown-item" href="">Daftar Sekarang</a>
                                 <div class="dropdown-divider border-0 d-lg-none"></div>
                             </div>
